@@ -115,10 +115,30 @@
 #define DISH_RPT_SPACE 6200
 #define DISH_TOP_BIT 0x8000
 
+#define PANASONIC_HDR_MARK 3502
+#define PANASONIC_HDR_SPACE 1750
+#define PANASONIC_BIT_MARK 502
+#define PANASONIC_ONE_SPACE 1244
+#define PANASONIC_ZERO_SPACE 400
+
+#define JVC_HDR_MARK 8000
+#define JVC_HDR_SPACE 4000
+#define JVC_BIT_MARK 600
+#define JVC_ONE_SPACE 1600
+#define JVC_ZERO_SPACE 550
+#define JVC_RPT_LENGTH 60000
+
+#define SAMSUNG_HDR_MARK 4500
+#define SAMSUNG_BITS 32
+#define SAMSUNG_HDR_SPACE 4500
+#define SAMSUNG_BIT_MARK 560
+#define SAMSUNG_ONE_SPACE 1600
+#define SAMSUNG_ZERO_SPACE 600
+
 #define SHARP_BITS 15
 #define DISH_BITS 16
 
-#define TOLERANCE 25  // percent tolerance in measurements
+#define TOLERANCE 35  // percent tolerance in measurements
 #define LTOL (1.0 - TOLERANCE/100.) 
 #define UTOL (1.0 + TOLERANCE/100.) 
 
@@ -163,6 +183,8 @@ extern volatile irparams_t irparams;
 
 #define NEC_BITS 32
 #define SONY_BITS 12
+#define PANASONIC_BITS 48
+#define JVC_BITS 16
 #define MIN_RC5_SAMPLES 11
 #define MIN_RC6_SAMPLES 1
 

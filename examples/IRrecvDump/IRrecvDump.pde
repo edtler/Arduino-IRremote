@@ -66,6 +66,15 @@ void dump(decode_results *results) {
   else if (results->decode_type == RC6) {
     Serial.print("Decoded RC6: ");
   }
+  else if (results->decode_type == PANASONIC) {
+    Serial.print("Decoded PANASONIC: ");
+  }
+  else if (results->decode_type == JVC) {
+    Serial.print("Decoded JVC: ");
+  }
+  else if (results->decode_type == SAMSUNG) {
+    Serial.print("Decoded SAMSUNG: ");
+  }
   printHex64(results->value);
   Serial.print(" (");
   Serial.print(results->bits, DEC);
